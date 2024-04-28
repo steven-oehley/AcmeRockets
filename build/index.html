@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acme Rockets</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body class="min-h-screen bg-slate-50 dark:bg-sky-950 dark:text-white">
+    <header class="bg-sky-700 text-white sticky -top-1 z-50">
+      <section class="max-w-5xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-medium text-yellow-400">
+          <a href="#">🚀 Acme Rockets </a>
+        </h1>
+        <div>
+          <button id="hamburger-btn" class="text-3xl md:hidden cursor-pointer">
+            &#9776;
+          </button>
+          <nav id="large-nav" class="hidden md:block space-x-8 text-xl">
+            <a
+              href="#rockets"
+              class="border-b-4 border-transparent pb-1 hover:text-yellow-400 hover:border-yellow-400"
+              >Rockets</a
+            >
+            <a
+              href="#testimonials"
+              class="border-b-4 border-transparent pb-1 hover:text-yellow-400 hover:border-yellow-400"
+              >Testimonials</a
+            >
+            <a
+              href="#contact"
+              class="border-b-4 border-transparent pb-1 hover:text-yellow-400 hover:border-yellow-400"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="animate-jump-in animate-once animate-duration-500 animate-ease-in-out absolute top-0 bg-black w-full text-4xl flex flex-col justify-center transform transition-transform duration-300 ease-in-out -translate-y-full"
+      >
+        <button id="exit-btn" class="text-7xl px-6 self-end">&times;</button>
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#" class="w-full text-center py-6 hover:text-yellow-400"
+            >Home</a
+          >
+          <a
+            href="#rockets"
+            class="w-full text-center py-6 hover:text-yellow-400"
+            >Rockets</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full text-center py-6 hover:text-yellow-400"
+            >Testimonials</a
+          >
+          <a
+            href="#contact"
+            class="w-full text-center py-6 hover:text-yellow-400"
+            >Contact</a
+          >
+        </nav>
+      </section>
+    </header>
+    <main class="max-w-5xl mx-auto">
+      <section
+        id="hero"
+        class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 min-h-screen"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white"
+          >
+            We Boldly Go
+            <span class="text-fuchsia-400">Where No Rocket</span> Has Gone
+            Before...
+          </h2>
+          <p
+            class="max-w-md text-2-xl mt-4 text-center sm:text-left text-slate-400"
+          >
+            We're building rockets for the next century today. From the moon to
+            Mars, Jupiter and beyond...
+          </p>
+          <p class="max-w-md text-2xl mt-4 text-center sm:text-left font-bold">
+            Get Ready For Blast Off!
+          </p>
+        </article>
+        <img
+          src="./img/rocketdab.png"
+          alt="spaceman doing a dab on rocket"
+          class="w-1/2"
+        />
+      </section>
+      <hr class="mx-auto bg-black dark:bg-white w-2/3" />
+      <section id="rockets" class="p-6 my-12 scroll-m-20 min-h-screen">
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-12 text-sky-700 dark:text-white"
+        >
+          Our Rockets
+        </h2>
+        <ul class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <li
+            class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg w-4/5 mx-auto md:w-auto bg-white dark:bg-black border border-solid border-slate-900 dark:border-gray-100 rounded-3xl shadow-xl dark:shadow-slate-500 dark:shadow-md p-6 flex flex-col items-center hover:border-fuchsia-400 hover:text-white"
+          >
+            <img
+              src="./img/rocketman.png"
+              alt="space man on rocket flying to left"
+              class="w-1/2 mb-6"
+            />
+            <h3
+              class="text-3xl text-center text-slate-900 dark:text-yellow-400 mb-4"
+            >
+              Explorer
+            </h3>
+            <p class="text-slate-400 text-center">
+              Blast off into the unknown with our Explorer Rocket—a trusty steed
+              for the intrepid explorer on a budget! Reach for the stars (and
+              beyond) without breaking the bank. Perfect for those seeking a
+              taste of interstellar adventure without sacrificing the
+              essentials… like, uh, oxygen!
+            </p>
+          </li>
+          <li
+            class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg w-4/5 mx-auto md:w-auto bg-white dark:bg-black border border-solid border-slate-900 dark:border-gray-100 rounded-3xl shadow-2xl dark:shadow-slate-500 dark:shadow-md p-6 flex flex-col items-center hover:border-fuchsia-400 hover:text-white"
+          >
+            <img
+              src="./img/rocketride.png"
+              alt="space man on rocket flying to right"
+              class="w-1/2 mb-6"
+            />
+            <h3
+              class="text-3xl text-center text-slate-900 dark:text-yellow-400 mb-4"
+            >
+              Adventurer
+            </h3>
+            <p class="text-slate-400 text-center">
+              Calling all thrill-seekers and space buffs! The Adventurer Rocket
+              is your ticket to the cosmos—packed with extra flair and a dash of
+              swagger. Imagine cruising past asteroids like a boss. Whether
+              you're aiming for Mars or just orbiting the Moon for kicks, this
+              rocket screams, "Adventure awaits... and so does the complimentary
+              space snacks!"
+            </p>
+          </li>
+          <li
+            class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg w-4/5 mx-auto md:w-auto bg-white dark:bg-black border border-solid border-slate-900 dark:border-gray-100 rounded-3xl shadow-xl dark:shadow-slate-500 dark:shadow-md p-6 flex flex-col items-center hover:border-fuchsia-400 hover:text-white"
+          >
+            <img
+              src="./img/rocketlaunch.png"
+              alt="rocket launching into space"
+              class="w-1/2 mb-6"
+            />
+            <h3
+              class="text-3xl text-center text-slate-900 dark:text-yellow-400 mb-4"
+            >
+              Infinity
+            </h3>
+            <p class="text-slate-400 text-center">
+              Behold, the pinnacle of spacefaring luxury—the Infinity Rocket.
+              For the elite cosmic voyager who demands nothing less than the
+              best. Picture yourself sipping zero-gravity espresso while gazing
+              at Saturn's rings from your personal observation deck. The
+              Infinity Rocket: where space travel meets 5-star comfort. Warning:
+              may induce feelings of intergalactic superiority.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <hr class="mx-auto bg-black dark:bg-white w-2/3" />
+      <section id="testimonials" class="p-6 my-12 scroll-mt-20 min-h-screen">
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-12 text-sky-700 dark:text-white"
+        >
+          Testimonials
+        </h2>
+        <figure class="my-12">
+          <blockquote
+            class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:border-fuchsia-400 bg-sky-900 dark:bg-black border border-solid border-slate-900 dark:border-gray-100 shadow-sm dark:shadow-slate-500 dark:shadow-sm text-white py-12 pl-14 pr-8 rounded-3xl relative"
+          >
+            <!-- example of pseduo before and after -->
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-7xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-12 after:transform after:font-serif after:text-7xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
+            >
+              To infinity and beyond! As a seasoned space ranger, I can vouch
+              for the Explorer Rocket. It's
+              <span class="font-bold text-yellow-400"
+                >not just a rocket; it's a trusty sidekick</span
+              >
+              that will take you on adventures across the galaxy. No need for
+              'to infinity and stuck on Earth' excuses anymore!
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400 pr-2"
+          >
+            &#8212; Buzz Lightyear
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:border-fuchsia-400 bg-sky-900 dark:bg-black border border-solid border-slate-900 dark:border-gray-100 shadow-sm dark:shadow-slate-500 dark:shadow-sm text-white py-12 pl-14 pr-8 rounded-3xl relative"
+          >
+            <!-- example of pseduo before and after -->
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-7xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-12 after:transform after:font-serif after:text-7xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
+            >
+              If you want a rocket that matches your cosmic aspirations, look no
+              further. The Adventurer Rocket is
+              <span class="font-bold text-yellow-400"
+                >like stepping into a sci-fi movie</span
+              >, complete with cool maneuvers and complimentary space snacks.
+              Warning: may cause spontaneous moonwalks.
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400 pr-2"
+          >
+            &#8212; Stardust Sally
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:border-fuchsia-400 bg-sky-900 dark:bg-black border border-solid border-slate-900 dark:border-gray-100 shadow-sm dark:shadow-slate-500 dark:shadow-sm text-white py-12 pl-14 pr-8 rounded-3xl relative"
+          >
+            <!-- example of pseduo before and after -->
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-7xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-12 after:transform after:font-serif after:text-7xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
+            >
+              As someone who's seen the future,
+              <span class="font-bold text-yellow-400"
+                >the Infinity Rocket is my go-to for intergalactic travel in
+                style</span
+              >. Picture yourself sipping espresso among the stars, feeling like
+              a 5-star astronaut. Just don't forget your space suit; the comfort
+              can be dangerously addictive!
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400 pr-2"
+          >
+            &#8212; Elon Tusk
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg hover:border-fuchsia-400 bg-sky-900 dark:bg-black border border-solid border-slate-900 dark:border-gray-100 shadow-sm dark:shadow-slate-500 dark:shadow-sm text-white py-12 pl-14 pr-8 rounded-3xl relative"
+          >
+            <!-- example of pseduo before and after -->
+            <p
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-7xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-12 after:transform after:font-serif after:text-7xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
+            >
+              The Explorer Rocket is
+              <span class="font-bold text-yellow-400"
+                >perfect for dreamers who want to touch the moon</span
+              >
+              and see Nargles up close. It's like riding a magic broomstick, but
+              cooler. Bonus points for the oxygen; really helps with the
+              'out-of-this-world' experience!
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400 pr-2"
+          >
+            &#8212; Luna Lovegood
+          </figcaption>
+        </figure>
+      </section>
+      <hr class="mx-auto bg-black dark:bg-white w-2/3" />
+      <section id="contact" class="p-6 my-12 scroll-mt-12">
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-12 text-sky-700 dark:text-white"
+        >
+          Contact Us
+        </h2>
+        <div class="container bg-sky-800 p-8 rounded-xl mx-auto">
+          <form
+            action=""
+            class="w-7/8 mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+          >
+            <label for="subject" class="pl-1 text-white"> Subject: </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              minlength="3"
+              maxlength="60"
+              placeholder="Your Subject Here"
+              class="w-full text-black text-xl sm:text-2xl rounded-xl p-3 border border-solid border-slate-900 dark:border:none"
+            />
+            <label for="subject" class="pl-1 text-white"> Message: </label>
+            <textarea
+              type="text"
+              id="message"
+              name="mesasge"
+              cols="30"
+              rows="10"
+              required
+              placeholder="Your Message Here"
+              class="w-full text-black text-xl sm:text-2xl rounded-xl p-3 border border-solid border-slate-900 dark:border:none"
+            ></textarea>
+            <button
+              class="transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 mx-auto font-semibold bg-sky-400 text-xl md:text-2xl hover:text-black hover:bg-yellow-400 active:bg-yellow-400 focus:bg-yellow-400 border border-solid border-black px-8 py-4 rounded-xl"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="bg-sky-700 text-xl text-white">
+      <section
+        class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between items-center space-y-6"
+      >
+        <address>
+          <h2>Acme Rocket-Power Products, Inc.</h2>
+          555 Astro Way<br />
+          Fairfield, New Jersey 12345-5555<br />
+          Email:
+          <a href="mailto:inquireies@acemerockets.com"
+            >Inquires@acemerockets.com</a
+          ><br />
+          Phone: <a href="tel:+15555555555">(555) 555-5555</a>
+        </address>
+        <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
+          <a
+            href="#rockets"
+            class="border-b-4 border-transparent pb-0.25 hover:text-yellow-400 hover:border-yellow-400>Our Rockets"
+            >Rockets</a
+          >
+          <a
+            href="#testimonials"
+            class="border-b-4 border-transparent pb-0.25 hover:text-yellow-400 hover:border-yellow-400>Our Rockets"
+            >Testimonials</a
+          >
+          <a
+            href="#contact"
+            class="border-b-4 border-transparent pb-0.25 hover:text-yellow-400 hover:border-yellow-400>Our Rockets"
+            >Contact Us</a
+          >
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year">2024</span></p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
