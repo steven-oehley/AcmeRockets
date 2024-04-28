@@ -39,9 +39,14 @@
       </section>
       <section
         id="mobile-menu"
-        class="animate-jump-in animate-once animate-duration-500 animate-ease-in-out absolute top-0 bg-black w-full text-4xl flex flex-col justify-center transform transition-transform duration-300 ease-in-out -translate-y-full"
+        class="absolute top-0 right-0 bg-sky-800 dark:bg-black w-1/2 text-4xl hidden flex-col justify-center transform transition-transform duration-300 ease-in-out -translate-y-full"
       >
-        <button id="exit-btn" class="text-7xl px-6 self-end">&times;</button>
+        <button
+          id="exit-btn"
+          class="text-7xl px-6 self-end hover:text-yellow-400"
+        >
+          &times;
+        </button>
         <nav
           class="flex flex-col min-h-screen items-center py-8"
           aria-label="mobile"
@@ -277,7 +282,7 @@
         >
           Contact Us
         </h2>
-        <div class="container bg-sky-800 p-8 rounded-xl mx-auto">
+        <div class="container bg-sky-800 dark:bg-black p-8 rounded-xl mx-auto">
           <form
             action=""
             class="w-7/8 mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
